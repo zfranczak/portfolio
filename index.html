@@ -1,0 +1,137 @@
+<!--
+Zak Franczak: 1/19/2023
+
+freeCodeCamp Portfolio Project
+    
+User Stories:
+
+1. Your portfolio should have a welcome section with an id of welcome-section
+2. The welcome section should have an h1 element that contains text
+3. Your portfolio should have a projects section with an id of projects
+4. The projects section should contain at least one element with a class of project-tile to hold a project
+5. The projects section should contain at least one link to a project
+6. Your portfolio should have a navbar with an id of navbar
+7. The navbar should contain at least one link that you can click on to navigate to different sections of the page
+8. Your portfolio should have a link with an id of profile-link, which opens your GitHub or freeCodeCamp profile in a new tab
+9. Your portfolio should have at least one media query
+10. The height of the welcome section should be equal to the height of the viewport
+11. The navbar should always be at the top of the viewport
+
+Fulfill the user stories and pass all the tests below to complete this project. Give it your own personal style. Happy Coding!
+
+Note: Be sure to add <link rel="stylesheet" href="styles.css"> in your HTML to link your stylesheet and apply your CSS-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Portfolio: Zak Franczak</title>
+    <link rel="stylesheet" href="styles.css" />
+    <!--Add in font awesome fonts for social icons-->
+    <script
+      src="https://kit.fontawesome.com/7b4658ed94.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <div id="page-wrapper">
+      <main>
+        <header>
+          <!--Hero Image-->
+          <div class="hero">
+            <img src="/Assets/zak-tokyo-tower.jpeg" alt="Zak Franczak" />
+            <h1 class="hero-title">Zak Franczak</h1>
+            <h3 class="hero-subtitle">Front End Developer</h3>
+          </div>
+
+          <!--Social Icons-->
+          <div class="social-icons">
+            <a href="https://www.linkedin.com/in/zachary-franczak/">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="https://github.com/zfranczak">
+              <i class="fa-brands fa-github"></i>
+            </a>
+          </div>
+        </header>
+
+        <!--About Me-->
+        <div id="main-body">
+        <section id="about-me">
+          <h2 class="title">Zak Franczak</h2>
+          <h3 class="subtitle">Front End Developer</h3>
+          <p class="text">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio,
+            corrupti omnis, molestias commodi corporis eveniet quod recusandae
+            esse laudantium minima repellat a reprehenderit amet magni fuga
+            labore neque dignissimos blanditiis.
+          </p>
+          <div class="resume">
+            <a>RESUME</a>
+            <!--Add Button to download resume-->
+          </div>
+        </section>
+        <!--Projects-->
+        <section id="project-section">
+          <h2 class="title">Projects</h2>
+          <!--Gallery of projects.  Grid or flexbox-->
+          <div id="project-box">
+            <div class="project">
+              <!--Pistachio Peet Game-->
+              <a href="https://zfranczak.github.io/pistachio-peet/"
+                ><img
+                  src="/Assets/pistachio-peet.png"
+                  alt="Pistachio Peet - Game using JS"
+                />
+              </a>
+            </div>
+            <div class="project">
+              <!--Rental Property-->
+              <a href="https://zfranczak.github.io/productlandingpage/">
+                <img
+                  src="Assets/rental-site-ss.jpg"
+                  alt="Rental Property Project using HTML & CSS"
+                />
+              </a>
+            </div>
+            <div class="project">
+              <!--Project #3-->
+              <div class="text-box">
+                <p class="text">Project 3</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!--Contact Form-->
+        <section id="contact-form">
+          <h2 class="title">Contact Form</h2>
+          <!--  
+              Items to include:
+              -Name
+              -Number
+              -Email
+              -Message Box
+          -->
+        </section>
+      
+
+      <footer>
+        <p>Zak Franczak</p>
+        <!--Social Icons-->
+        <div class="social-icons">
+          <a href="https://www.linkedin.com/in/zachary-franczak/">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a href="https://github.com/zfranczak">
+            <i class="fa-brands fa-github"></i>
+          </a>
+        </div>
+    
+      </footer>
+    </main>
+    </div>
+  </body>
+</html>
