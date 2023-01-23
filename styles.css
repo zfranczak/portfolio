@@ -21,50 +21,115 @@ html {
   scroll-behavior: smooth;
 }
 
+body {
+  background-color: var(--secondary-color);
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Roboto Slab", Veranda;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 80px;
+}
+
+h3 {
+  font-size: 40px;
+}
+
+p {
+  font-family: "Neuton";
+  font-size: 45px;
+}
+
 /*child of body*/
 main {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  margin: auto;
 }
 
 /*child of main*/
 #page-wrapper {
   position: relative;
-
-  text-align: center;
   overflow-x: hidden;
 }
-
-header {
+.hero {
   position: fixed;
-  z-index: -1;
-  margin: 0 auto;
-  background-color: var(--secondary-color);
-  width: 100vw;
-  height: 100vh;
+  z-index: 1;
+
+  width: 80vw;
+}
+
+.hero-box {
+  color: white;
+  font-size: 45px;
+}
+
+.hero-box:hover h1 {
+  transform: translate(0, -90px);
+}
+
+.hero-text {
+  height: 90px;
+  overflow: hidden;
+  position: relative;
+}
+
+.hero-text:nth-child(odd) {
+  transform: skew(60deg, -30deg) scaleY(0.667);
+}
+
+.hero-text:nth-child(even) {
+  transform: skew(0deg, -30deg) scaleY(1.333);
+}
+
+.hero-text:nth-child(1) {
+  left: 100px;
+}
+
+.hero-text:nth-child(2) {
+  left: 150px;
+}
+
+.hero-text:nth-child(3) {
+  left: 200px;
+}
+
+.hero-text:nth-child(4) {
+  left: 250px;
+}
+
+h1 {
+  margin: 0;
+  height: 90px;
+  line-height: 90px;
+  transition: all 0.5s ease-in-out;
 }
 
 .social-icons {
-  margin: 0 auto;
+  position: fixed;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  background: var(--background-colors);
+  margin: 10px 0 0 20px;
 }
 
 .social-icons a {
-  font-size: 35px;
-  margin: 0 20px;
-  background: #ff934f;
-  border-style: solid;
-  border-width: 2px;
-  border-color: #c74f05;
-  border-radius: 10%;
+  font-size: 60px;
+  color: white;
+  margin: 10px 0;
 }
 
 /*child of header*/
-.hero img {
+/*.hero img {
   width: 100%;
   max-width: 1000px;
   object-fit: cover;
   object-position: center;
-}
+}*/
 
 .title {
   margin: 0 auto;
@@ -74,11 +139,29 @@ header {
   background: var(--background-color);
   z-index: 9;
   position: relative;
-  top: 100vh;
+  top: 60vh;
   height: 100vh;
+  transform: skewY(-30deg);
+  text-align: center;
+}
+
+section {
+  margin: 0 auto;
+  max-width: 1000px;
 }
 
 #about-me {
+  transform: skewY(30deg);
+  top: 60vh;
+  height: 100vh;
+}
+
+.center {
+  position: fixed;
+  top: 25%;
+}
+
+#about-me h2 {
 }
 
 #project-section {
@@ -89,6 +172,7 @@ header {
 
 #project-section .title {
   grid-row: 1;
+  transform: skewY(30deg);
 }
 
 #project-box {
@@ -102,7 +186,7 @@ header {
   flex-wrap: wrap;
   justify-content: center;
   gap: 16px;
-
+  transform: skewY(30deg);
   padding: 20px auto;
 }
 
@@ -132,14 +216,18 @@ header {
 
 #contact-form {
   font-weight: 900;
+  transform: skewY(30deg);
+  padding: 100px;
 }
 /*child of body*/
 footer {
-  font-size: 25px;
-  padding-top: 20px;
-  height: 100px;
+  font-size: 50px;
+  font-family: "Roboto Slab", Veranda;
+  padding: 100px;
+  margin: 50 auto;
   width: auto;
-  background-color: var(--secondary-color);
+  background: var(--secondary-color);
+  transform: skewY(30deg);
 
   z-index: 9;
 }
