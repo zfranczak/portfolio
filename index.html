@@ -5,17 +5,30 @@ freeCodeCamp Portfolio Project
     
 User Stories:
 
-1. Your portfolio should have a welcome section with an id of welcome-section
-2. The welcome section should have an h1 element that contains text
-3. Your portfolio should have a projects section with an id of projects
-4. The projects section should contain at least one element with a class of project-tile to hold a project
-5. The projects section should contain at least one link to a project
-6. Your portfolio should have a navbar with an id of navbar
-7. The navbar should contain at least one link that you can click on to navigate to different sections of the page
-8. Your portfolio should have a link with an id of profile-link, which opens your GitHub or freeCodeCamp profile in a new tab
+1. Your portfolio should have a welcome 
+    section with an id of welcome-section
+2. The welcome section should have an h1 
+    element that contains text
+3. Your portfolio should have a projects 
+   section with an id of projects
+4. The projects section should contain at  
+    least one element with a class of project-tile 
+    to hold a project
+5. The projects section should contain at 
+   least one link to a project
+6. Your portfolio should have a navbar with 
+   an id of navbar
+7. The navbar should contain at least one link 
+   that you can click on to navigate to different 
+   sections of the page
+8. Your portfolio should have a link with an id 
+   of profile-link, which opens your GitHub or 
+   freeCodeCamp profile in a new tab
 9. Your portfolio should have at least one media query
-10. The height of the welcome section should be equal to the height of the viewport
-11. The navbar should always be at the top of the viewport
+10. The height of the welcome section should be 
+   equal to the height of the viewport
+11. The navbar should always be at the 
+  top of the viewport
 
 Fulfill the user stories and pass all the tests below to complete this project. Give it your own personal style. Happy Coding!
 
@@ -29,11 +42,12 @@ Note: Be sure to add <link rel="stylesheet" href="styles.css"> in your HTML to l
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Portfolio: Zak Franczak</title>
     <link rel="stylesheet" href="styles.css" />
-    <!--Add in font awesome fonts for social icons-->
+    <!--font awesome fonts for social icons-->
     <script
       src="https://kit.fontawesome.com/7b4658ed94.js"
       crossorigin="anonymous"
     ></script>
+    <!--Google Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap" rel="stylesheet">
@@ -47,7 +61,9 @@ Note: Be sure to add <link rel="stylesheet" href="styles.css"> in your HTML to l
       <main>
         <header>
           <!--Hero Image-->
+          <a href="#welcome-section">
           <div class="hero">
+
           
             
             <div class="hero-box">
@@ -69,7 +85,7 @@ Note: Be sure to add <link rel="stylesheet" href="styles.css"> in your HTML to l
               </div>
             </div>  
           </div>
-          
+        </a>
 
          <!-- <img src="/Assets/zak-tokyo-tower.jpeg" alt="Zak Franczak" /> -->
           
@@ -77,46 +93,75 @@ Note: Be sure to add <link rel="stylesheet" href="styles.css"> in your HTML to l
 
         
         <!--Social Icons-->
+        <nav id="navbar">
+          
         <div class="social-icons">
+
+          <a href="#welcome-section" class="nav-link">
+            <i class="fa-solid fa-user-astronaut"></i>
+            
+            
+          </a>
+          <a href="#projects" class="nav-link">
+            <i class="fa-solid fa-file-code"></i>
+            
+          </a>
+          <a href="#contact-form" class="nav-link">
+            <i class="fa-solid fa-envelope"></i>
+            
+          </a>
+
+          <hr></hr>
+
+          
           <a href="https://www.linkedin.com/in/zachary-franczak/">
               <i class="fab fa-linkedin-in"></i>
             </a>
-            <a href="https://github.com/zfranczak">
+            <a href="https://github.com/zfranczak" >
               <i class="fa-brands fa-github"></i>
             </a>
+            
+
+          
         </div>
+      </nav>
         <!--About Me-->
         <div id="main-body">
-        <section id="about-me">
+        <section id="welcome-section">
           
           <div class="center">
-          <h2 class="title">Zak Franczak</h2>
+          <h1 class="title">Zak Franczak</h1>
           <h3 class="subtitle">Front End Developer</h3>
           <p class="text">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio,
-            corrupti omnis, molestias commodi corporis eveniet quod recusandae
-            esse laudantium minima repellat a reprehenderit amet magni fuga
-            labore neque dignissimos blanditiis.
+            Hi!  I'm Zak, a front end developer born and 
+            raised in the SF Bay Area.  If I'm not coding, you'll probably find me hiking. 🌲
           </p>
+          <hr></hr>
           <div class="resume">
-            <a>RESUME</a>
+            <a href="#" target="_blank">RESUME</a>
             <!--Add Button to download resume-->
           </div>
           </div>
         </section>
+        
         <!--Projects-->
-        <section id="project-section">
-          <h2 class="title">Projects</h2>
+        <section id="projects">
+          
+          <div id="project-conatiner">
+           
+          <h2 class="project-title">Projects</h2>
+         
           <!--Gallery of projects.  Grid or flexbox-->
-          <div id="project-box">
+          <div class="project-tile">
             <div class="project">
               <!--Pistachio Peet Game-->
               <a href="https://zfranczak.github.io/pistachio-peet/"
-                ><img
+              id="profile-link" target="_blank"><img
                   src="/Assets/pistachio-peet.png"
                   alt="Pistachio Peet - Game using JS"
                 />
               </a>
+              <h3 class="project-name">Pistachio Peet</h3>
             </div>
             <div class="project">
               <!--Rental Property-->
@@ -126,18 +171,35 @@ Note: Be sure to add <link rel="stylesheet" href="styles.css"> in your HTML to l
                   alt="Rental Property Project using HTML & CSS"
                 />
               </a>
+              <h3 class="project-name">Rental Property</h3>
             </div>
             <div class="project">
               <!--Project #3-->
-              <div class="text-box">
-                <p class="text">Project 3</p>
-              </div>
+              <a href="#page-wrapper"
+                ><img
+                  src="/Assets/portfolio-site.jpg"
+                  alt="My Portfolio"
+                />
+              </a>
+              <h3 class="project-name">Protfolio</h3>
             </div>
+          </div>
           </div>
         </section>
         <!--Contact Form-->
         <section id="contact-form">
           <h2 class="title">Contact Form</h2>
+
+            <form>
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name"><br>
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email"><br>
+              <label for="message">Message:</label>
+              <textarea id="message" name="message"></textarea><br>
+              <input type="submit" value="Submit" style="background-color: #00bfff; color: white; padding: 10px;">
+            </form>
+   
           <!--  
               Items to include:
               -Name
@@ -149,7 +211,7 @@ Note: Be sure to add <link rel="stylesheet" href="styles.css"> in your HTML to l
       
 
       <footer>
-        <p>Zak Franczak</p>
+        
         
     
       </footer>
