@@ -130,7 +130,6 @@ h1 {
 }
 
 .social-icons a i:hover {
-  font-size: 60px;
   color: var(--highlight);
 }
 
@@ -170,6 +169,7 @@ section {
 #welcome-section {
   top: 60vh;
   height: 120vh;
+  max-width: 800px;
 }
 
 .center {
@@ -180,7 +180,6 @@ section {
 
 #welcome-section h1 {
   font-size: 80px;
-  top: ;
 }
 
 #projects {
@@ -198,7 +197,6 @@ section {
   grid-row: 2;
   text-align: center;
 
-  height: 1000px;
   width: 80vw;
   margin: 0 auto;
   display: flex;
@@ -246,11 +244,36 @@ form {
 }
 
 form label {
+  margin-bottom: 5px;
   text-align: left;
 }
 
 #contact-form h2 {
 }
+
+input[type="submit"] {
+  background-color: var(--secondary-color);
+  color: white;
+  padding: 10px;
+  text-transform: uppercase;
+  box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.06);
+}
+
+input[type="submit"]:hover {
+  background-color: var(--highlight);
+  color: black;
+  text-transform: uppercase;
+}
+
+input,
+textarea {
+  background-color: rgb(81, 148, 134);
+  border: 1px solid #0a0a23;
+  color: #ffffff;
+  padding: 10px;
+  border-radius: 10px;
+}
+
 /*child of body*/
 footer {
   font-size: 50px;
@@ -264,4 +287,102 @@ footer {
 }
 
 footer p {
+}
+
+@media screen and (max-width: 800px) {
+  .social-icons {
+    position: fixed;
+    z-index: 10;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    background-color: var(--secondary-color);
+    width: 100%;
+    border-bottom: white solid 1px;
+
+    margin: auto;
+  }
+  .social-icons a i {
+    font-size: 30px;
+    color: white;
+    margin: 10px 20px;
+  }
+  .hero-box {
+    margin-left: 1%;
+  }
+  #welcome-section {
+    max-width: 500px;
+  }
+
+  .project-title,
+  h2 {
+    font-size: 50px;
+  }
+
+  .project-name {
+    font-size: 30px;
+  }
+
+  #welcome-section .center .title,
+  #welcome-section h1 {
+    font-size: 50px;
+  }
+  .subtitle {
+    font-size: 30px;
+  }
+  .text {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .social-icons {
+    position: fixed;
+    z-index: 10;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    background-color: var(--secondary-color);
+    width: 100%;
+    border-bottom: white solid 1px;
+
+    margin: auto;
+  }
+  .social-icons a i {
+    font-size: 30px;
+    color: white;
+    margin: 10px 20px;
+  }
+  #main-body {
+    top: 30vh;
+    height: 100%;
+  }
+  #welcome-section {
+    max-width: 250px;
+  }
+  #welcome-section .center .title,
+  #welcome-section h1 {
+    font-size: 30px;
+  }
+  .subtitle {
+    font-size: 20px;
+  }
+
+  .text {
+    font-size: 15px;
+  }
+  .project-title,
+  h2 {
+    font-size: 30px;
+  }
+
+  .project-name {
+    font-size: 15px;
+  }
+  .project img {
+    width: 200px;
+    height: 120px;
+  }
+  #contact-form {
+  }
 }
