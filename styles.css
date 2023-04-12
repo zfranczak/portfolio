@@ -143,14 +143,11 @@ h1 {
 
 #project-container {
   position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
 }
 
 .project {
   margin-bottom: 30px;
-  width: 300px
+  
 }
 .project-title {
   margin: 0 auto;
@@ -198,7 +195,7 @@ section {
 #projects {
   max-width: 100vw;
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* Display 3 project tiles per row */
+
   position: relative;
 }
 
@@ -209,13 +206,14 @@ section {
 .project-tile {
   grid-row: 2;
   text-align: center;
+
+  width: 80vw;
   margin: 0 auto;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 16px;
-  width: 100%; /* Set the width to 100% to fill the grid cell */
+  gap: 24px;
 }
 
 /*child of .projects*/
@@ -227,6 +225,13 @@ section {
   height: 250px;
   border-radius: 10px;
   background: rgb(214, 255, 214);
+}
+
+.tags {
+  max-width:450px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:center;
 }
 
 .tag {
@@ -254,6 +259,11 @@ section {
   border-radius: 20px;
   transition: all 0.3s ease-in-out;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.description {
+  max-width: 450px;
+  font-size: 1.5rem;
 }
 
 

@@ -121,56 +121,101 @@
               <div class="project-tile">
                 <div class="project">
                   <a href="http://www.inspirebot3000.com">
-                    <img src="https://i.imgur.com/LoOU6tQ.jpg" alt="AI Motivational App" target="_blank">
+                    <img id="aiImg" src="./assets/AI-app.jpg" alt="AI Motivational App" target="_blank">
+                    <script>
+                      const img = document.getElementById("aiImg");
+                      img.onerror = function() {
+                        img.src = "https://i.imgur.com/LoOU6tQ.jpg";
+                      };
+                    </script>
                   </a>
                   <div class="project-details">
                     <h3 class="project-name">InspireBOT 3000 <br> An AI Motivational App</h3>
                     <div class="tags">
                       <span>React</span>
-                      <span>SCSS</span>
+                      <span>SASS</span>
                       <span>Vite</span>
                       <span>JavaScript</span>
-                      <span>Web Development</span>
+                      <span>Open AI GPT API</span>
+                      <span>Unsplash API</span>
+                      <span>Web</span>
+                      <span>node.js</span>
+                      <span>axios</span>
                     </div>
+                    <p class="description">
+                      As part of a 4-week hackathon, two other developers and I 
+                      created a motivational app using AI that utilizes OpenAI's 
+                      API to generate quotes and integrates the Unsplash API to find 
+                      images related to the athlete's sport.
+                    </p>
                   </div>
                 </div>
                 <div class="project">
                   <a href="https://zfranczak.github.io/pistachio-peet/" id="profile-link" target="_blank">
-                    <img src="https://i.imgur.com/GMwgcKO.png" alt="Pistachio Peet - Game using JS">
+                    <img id="pistachio" src="./assets/pistachio-peet.png" alt="Pistachio Peet - Game using JS">
+                    <script>
+                      const img = document.getElementById("pistachio");
+                      img.onerror = function() {
+                        img.src = "https://i.imgur.com/GMwgcKO.png";
+                      };
+                    </script>
                   </a>
                   <div class="project-details">
                     <h3 class="project-name">Pistachio Peet</h3>
                     <div class="tags">
                       <span>JavaScript</span>
-                      <span>Game Development</span>
+                      <span>Phaser.io</span>
+                      <span>Matter.js</span>
+                      <span>Game</span>
                     </div>
+                    <p class="description">
+                      An Angry Birds style game made using the Phaser.io library and Matter.js physics engine.
+                    </p>
                   </div>
                 </div>                
               </div><!-- closing .project-tile div here -->
               <div class="project-tile">
                 <div class="project">
                   <a href="https://zfranczak.github.io/productlandingpage/">
-                    <img src="https://i.imgur.com/kWmgY8N.jpg" alt="Rental Property Project using HTML & CSS">
+                    <img id="rental" src="./assets/rental-site-ss.jpg" alt="Rental Property Project using HTML & CSS">
+                    <script>
+                      const img = document.getElementById("rental");
+                      img.onerror = function() {
+                        img.src = "https://i.imgur.com/kWmgY8N.jpg";
+                      };
+                    </script>
                   </a>
                   <div class="project-details">
                     <h3 class="project-name">Rental Property</h3>
                     <div class="tags">
                       <span>HTML</span>
                       <span>CSS</span>
-                      <span>Web Development</span>
+                      <span>Web</span>
                     </div>
+                    <p class="description">
+                      This is a website for a rental property in the UK utilizing flex-box.
+                    </p>
                   </div> 
                 </div> <!-- closing .project div here -->
                 <div class="project">
                   <a href="https://zfranczak.github.io/breakout-clone/">
-                    <img src="https://imgur.com/pYvUY0R.jpg" alt="Breakout Clone">
+                    <img id="breakout" src="./assets/breakout.jpg" alt="Breakout Clone">
+                    <script>
+                      const img = document.getElementById("breakout");
+                      img.onerror = function() {
+                        img.src = "https://imgur.com/pYvUY0R.jpg";
+                      };
+                    </script>
                   </a>
                   <div class="project-details">
                     <h3 class="project-name">Breakout Clone</h3>
                     <div class="tags">
                       <span>JavaScript</span>
-                      <span>Game Development</span>
+                      <span>Game</span>
                     </div>
+                    <p class="description">
+                      This is a clone of the popular game breakout I made when first learning JavaScript.
+                    </p>
                   </div>
                 </div>
               </div><!-- closing .project-tile div here -->
